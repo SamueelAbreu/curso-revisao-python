@@ -111,3 +111,29 @@ print(f"Variave inteira: {var}")
 
 # globais = acessiveis em todo o código
 # locais = apenas dentro do local onde foi criada, por exemplo, funçoes, condicionais e loops.
+
+"""
+Tipo de dado None
+Representa o tipo de dado sem tipo
+também conhecido como tipo de dado vazio
+mas falar que é um tipo sem tipo é mais apropriado
+
+Mesma coisa que NULL em C++
+
+criar uma variavel sem tipo, antes de receber o tipo final.
+
+"""
+
+
+# O tipo none em Py é sempre FALSE
+
+numeros = None
+
+print(numeros)
+print(type(numeros))
+
+# criar uma variavel sem tipo, antes de receber o tipo final.
+
+numeros = 1.22, 1.66, 1.77
+print(numeros)
+print(type(numeros))
