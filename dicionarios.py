@@ -77,5 +77,6 @@ print(type(localidades))
 
 # adicionar elementos em um dicionario
 
+# continuar minuto 39 da aula
 
 
