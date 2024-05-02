@@ -72,11 +72,118 @@ localidades = {
 
 print(localidades)
 print(type(localidades))
-"""
 
 
 # adicionar elementos em um dicionario
 
-# continuar minuto 39 da aula
+receita = {'jan': 100, 'fev':120, 'mar':300}
+print(receita)
+print(type(receita))
 
+# forma 1 (mais comum)
+receita['abr'] = 300
+print(receita)
+
+# forma 2 (menos comum)
+dado = {'maio':500}
+receita.update(dado) # receita.update({'maio':500})
+print(receita)
+
+# Atualizando dados em um dicionario
+
+# Forma 1
+
+receita['maio'] = 23
+print(receita)
+receita.update({'maio': 900})
+print(receita)
+
+# conclusão: a fomra de adicionar novos elementos ou atualizar dados em um dicionario é a mesma
+# conclusão2: em dicionarios, NÃO podemos ter chaves repetidas
+
+# Remover dados em um dicionario
+
+receita = {'jan': 100, 'fev':120, 'mar':300}
+print(receita)
+print(type(receita))
+
+# Forma 1 (mais comum)
+receita.pop('mar') #obrigatorio passar chave / caso não tenha, retorna erro
+print(receita)
+ret = receita.pop('jan') # pop retorna o valor quando remove
+print(ret)
+print(receita)
+
+# forma 2 (menos comum)
+
+del receita['fev']
+
+
+
+# Exemplo pratico; Comercio eletronico com carrinhos de compras
+
+# Carrinho de compras:
+# Produto1:
+#      Nome:
+#      Qnt:
+#      Preço
+# Produto2:
+#      Nome:
+#      Qnt:
+#      Preço
+
+# Utilizando listas
+carrinho = []
+
+produto1 = ['God Of War', 1, 230.00]
+produto2 = ['Harry Potter', 3, 20.00]
+
+carrinho.append(produto1)
+carrinho.append(produto2)
+
+print(carrinho)
+
+# Usando Tuplas
+
+produto1 = ['God Of War', 1, 230.00]
+produto2 = ['Harry Potter', 3, 20.00]
+
+carrinho = (produto1, produto2)
+print(carrinho)
+# Utilizando dicionarios
+carrinho = []
+produto1 = {'nome':'God Of War', 'quantidade':1, 'preco':230.00}
+produto2 = {'nome':'PS5', 'quantidade':1, 'preco':2530.00}
+produto3 = {'nome':'Harry Potter', 'quantidade':2, 'preco':20.00}
+
+carrinho.append(produto1)
+carrinho.append(produto2)
+carrinho.append(produto3)
+
+print(carrinho)
+"""
+
+# Metodos dicionarios
+
+d = dict(a=1, b=2, c=3)
+print(d)
+print(type(d))
+
+# d.clear()
+# print(d)
+
+# forma 1
+# novo = d.copy()
+# print(novo)
+
+# forma 2
+# novo = d
+# print(novo)
+# novo['d'] = 4
+# print(novo)
+
+# não usual de criação de dicionarios com fromkeys
+
+outro = {}.fromkeys('a', 'b')
+print(outro)
 
